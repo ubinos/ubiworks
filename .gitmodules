@@ -1,0 +1,12 @@
+[submodule "library/ubinos"]
+	path = library/ubinos
+	url = https://github.com/ubinos/ubinos.git
+	branch = master
+[submodule "library/nrf5sdk"]
+	path = library/nrf5sdk
+	url = https://github.com/ubinos/nrf5sdk.git
+	branch = master
+[submodule "library/nrf5example"]
+	path = library/nrf5example
+	url = https://github.com/ubinos/nrf5example.git
+	branch = master
