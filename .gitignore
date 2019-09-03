@@ -1,0 +1,11 @@
+/output/
+
+/make/custom.mk
+
+/include/*_config.h
+
+/.cproject
+/.project
+/.pydevproject
+/.settings/
+/.externalToolBuilders/
