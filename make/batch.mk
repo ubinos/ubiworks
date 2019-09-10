@@ -107,6 +107,10 @@
 	@echo ""
 	@echo "-------------------------------------------------------------------------------"
 	@echo ""
+	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=mycli2_nrf52dk
+	@echo ""
+	@echo "-------------------------------------------------------------------------------"
+	@echo ""
 	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_blinky2_nrf52dk
 	@echo ""
 	@echo "-------------------------------------------------------------------------------"
@@ -116,6 +120,10 @@
 	@echo "-------------------------------------------------------------------------------"
 	@echo ""
 	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_multilink_central2_nrf52dk
+	@echo ""
+	@echo "-------------------------------------------------------------------------------"
+	@echo ""
+	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_att_mtu_throughput2_nrf52dk
 	@echo ""
 	@echo "-------------------------------------------------------------------------------"
 	@echo ""
