@@ -1,20 +1,15 @@
 [submodule "library/ubinos"]
 	path = library/ubinos
 	url = https://github.com/ubinos/ubinos.git
-	branch = master
 [submodule "library/nrf5sdk"]
 	path = library/nrf5sdk
 	url = https://github.com/ubinos/nrf5sdk.git
-	branch = master
 [submodule "library/nrf5example"]
 	path = library/nrf5example
 	url = https://github.com/ubinos/nrf5example.git
-	branch = master
 [submodule "library/stm32cubef2"]
 	path = library/stm32cubef2
 	url = https://github.com/ubinos/stm32cubef2.git
-	branch = master
 [submodule "library/stm32f2example"]
 	path = library/stm32f2example
 	url = https://github.com/ubinos/stm32f2example.git
-	branch = master

@@ -259,37 +259,37 @@
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myrtc2_nrf52dk
+	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myrtc_nrf52dk
 	@echo ""
 	@echo ""
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=mycli2_nrf52dk
+	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=mycli_nrf52dk
 	@echo ""
 	@echo ""
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_blinky2_nrf52dk
+	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_blinky_nrf52dk
 	@echo ""
 	@echo ""
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_blinky2_c_nrf52dk
+	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_blinky_c_nrf52dk
 	@echo ""
 	@echo ""
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_multilink_central2_nrf52dk
+	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_multilink_central_nrf52dk
 	@echo ""
 	@echo ""
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_att_mtu_throughput2_nrf52dk
+	make -f makefile.mk $@ CONFIG_DIR=../library/nrf5example/app CONFIG_NAME=myble_app_att_mtu_throughput_nrf52dk
 	@echo ""
 	@echo ""
 
