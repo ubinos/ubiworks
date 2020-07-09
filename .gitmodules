@@ -1,21 +1,21 @@
 [submodule "library/ubinos"]
 	path = library/ubinos
 	url = https://github.com/ubinos/ubinos.git
-[submodule "library/nrf5sdk"]
-	path = library/nrf5sdk
-	url = https://github.com/ubinos/nrf5sdk.git
-[submodule "library/nrf5example"]
-	path = library/nrf5example
-	url = https://github.com/ubinos/nrf5example.git
-[submodule "library/stm32cubef2"]
-	path = library/stm32cubef2
-	url = https://github.com/ubinos/stm32cubef2.git
-[submodule "library/stm32f2example"]
-	path = library/stm32f2example
-	url = https://github.com/ubinos/stm32f2example.git
-[submodule "library/seggerrtt"]
-	path = library/seggerrtt
-	url = https://github.com/ubinos/seggerrtt.git
 [submodule "library/seggerrtt_wrapper"]
 	path = library/seggerrtt_wrapper
 	url = https://github.com/ubinos/seggerrtt_wrapper.git
+[submodule "library/seggerrtt"]
+	path = library/seggerrtt
+	url = https://github.com/ubinos/seggerrtt.git
+[submodule "library/nrf5sdk_wrapper"]
+	path = library/nrf5sdk_wrapper
+	url = https://github.com/ubinos/nrf5sdk_wrapper.git
+[submodule "library/nrf5sdk_v17.00.00_lite"]
+	path = library/nrf5sdk_v17.00.00_lite
+	url = https://github.com/ubinos/nrf5sdk_v17.00.00_lite.git
+[submodule "library/stm32cubef2_wrapper"]
+	path = library/stm32cubef2_wrapper
+	url = https://github.com/ubinos/stm32cubef2_wrapper.git
+[submodule "library/stm32cubef2_v01.09.00_lite"]
+	path = library/stm32cubef2_v01.09.00_lite
+	url = https://github.com/ubinos/stm32cubef2_v01.09.00_lite.git
