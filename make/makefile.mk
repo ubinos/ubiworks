@@ -12,5 +12,6 @@ zbatch-%:
 	make -C ../library/seggerrtt_wrapper/make           -f batch.mk OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) $*
 	make -C ../library/nrf5sdk_wrapper/make             -f batch.mk OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) $*
 	make -C ../library/stm32cubef2_wrapper/make         -f batch.mk OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) $*
+	make -C ../library/esp8266at/make                   -f batch.mk OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) $*
 
 

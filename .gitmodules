@@ -19,3 +19,6 @@
 [submodule "library/stm32cubef2_v01.09.00_lite"]
 	path = library/stm32cubef2_v01.09.00_lite
 	url = https://github.com/ubinos/stm32cubef2_v01.09.00_lite.git
+[submodule "library/esp8266at"]
+	path = library/esp8266at
+	url = git@github.com:ubinos/esp8266at.git
