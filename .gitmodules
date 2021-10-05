@@ -22,3 +22,9 @@
 [submodule "library/esp8266at"]
 	path = library/esp8266at
 	url = https://github.com/ubinos/esp8266at.git
+[submodule "library/nrf5sdk_extension"]
+	path = library/nrf5sdk_extension
+	url = git@github.com:ubinos/nrf5sdk_extension.git
+[submodule "library/stm32cubef2_extension"]
+	path = library/stm32cubef2_extension
+	url = git@github.com:ubinos/stm32cubef2_extension.git
