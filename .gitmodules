@@ -34,3 +34,9 @@
 [submodule "library/CMSIS_5_wrapper"]
 	path = library/CMSIS_5_wrapper
 	url = https://github.com/ubinos/CMSIS_5_wrapper.git
+[submodule "library/tflite-micro"]
+	path = library/tflite-micro
+	url = https://github.com/ubinos/tflite-micro.git
+[submodule "library/tflite-micro_wrapper"]
+	path = library/tflite-micro_wrapper
+	url = https://github.com/ubinos/tflite-micro_wrapper.git
