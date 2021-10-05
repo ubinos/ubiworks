@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ARM Target",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "make reset",
+            "program": "${workspaceFolder}/output/Default/app.elf",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "targetArchitecture": "arm",
+            "miDebuggerPath": "arm-none-eabi-gdb",
+            "miDebuggerServerAddress": "localhost:2331",
+        },
+        {
+            "name": "ARM Target (build load)",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "make build load",
+            "program": "${workspaceFolder}/output/Default/app.elf",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "targetArchitecture": "arm",
+            "miDebuggerPath": "arm-none-eabi-gdb",
+            "miDebuggerServerAddress": "localhost:2331",
+        }
+    ],
+}

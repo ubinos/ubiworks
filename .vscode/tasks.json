@@ -1,0 +1,197 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make help",
+            "type": "shell",
+            "command": "make",
+            "args": ["help"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make all",
+            "type": "shell",
+            "command": "make",
+            "args": ["all"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+        },
+        {
+            "label": "make config",
+            "type": "shell",
+            "command": "make",
+            "args": ["config"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make configd",
+            "type": "shell",
+            "command": "make",
+            "args": ["configd"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make build",
+            "type": "shell",
+            "command": "make",
+            "args": ["build"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+        },
+        {
+            "label": "make clean",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make cleand",
+            "type": "shell",
+            "command": "make",
+            "args": ["cleand"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make rebuild",
+            "type": "shell",
+            "command": "make",
+            "args": ["rebuild"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+        },
+        {
+            "label": "make rebuildd",
+            "type": "shell",
+            "command": "make",
+            "args": ["rebuildd"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+        },
+        {
+            "label": "make load",
+            "type": "shell",
+            "command": "make",
+            "args": ["load"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make run",
+            "type": "shell",
+            "command": "make",
+            "args": ["run"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make reset",
+            "type": "shell",
+            "command": "make",
+            "args": ["reset"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make debug",
+            "type": "shell",
+            "command": "make",
+            "args": ["debug"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make attach",
+            "type": "shell",
+            "command": "make",
+            "args": ["attach"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make xconfig",
+            "type": "shell",
+            "command": "make",
+            "args": ["xconfig"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make menuconfig",
+            "type": "shell",
+            "command": "make",
+            "args": ["menuconfig"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "focus": true,
+            }
+        },
+        {
+            "label": "make xsel",
+            "type": "shell",
+            "command": "make",
+            "args": ["xsel"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.tabs.enabled": true,
+    "C_Cpp.loggingLevel": "Debug",
+    "C_Cpp.default.configurationProvider": "",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/output/Default/compile_commands.json",
+    "disasexpl.useBinaryParsing": true,
+    "disasexpl.associations": {
+        "**/*.S": "${workspaceFolder}/output/Default/app.s",
+        "**/*.c": "${workspaceFolder}/output/Default/app.s",
+        "**/*.cpp": "${workspaceFolder}/output/Default/app.s",
+    },
+    "files.associations": {
+        "ubinos.h": "c"
+    },
+}
