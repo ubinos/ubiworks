@@ -192,6 +192,28 @@
             },
             "group": "build",
             "problemMatcher": [],
+        },
+        {
+            "label": "make build load",
+            "type": "shell",
+            "command": "make",
+            "args": ["build", "load"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+        },
+        {
+            "label": "make rebuildd load",
+            "type": "shell",
+            "command": "make",
+            "args": ["rebuildd", "load"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
         }
     ]
 }
