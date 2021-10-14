@@ -1,4 +1,7 @@
 /output/
 
 /make/custom.mk
+/make/Makefile.bak
 
+/.settings/
+/.externalToolBuilders/
