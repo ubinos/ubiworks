@@ -1,18 +1,14 @@
+#
+# Copyright (c) 2021 Sung Ho Park and CSOS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 cmake_minimum_required(VERSION 3.3)
 
 include("${CMAKE_CURRENT_LIST_DIR}/../library/ubinos/config/common.cmake")
 
 project(ubiworks)
-project_begin()
-project_add_library(ubinos)
-project_add_library(CMSIS_5_wrapper)
-project_add_library(seggerrtt_wrapper)
-project_add_library(tflite-micro_wrapper)
-project_add_library(nrf5sdk_wrapper)
-project_add_library(nrf5sdk_extionsion)
-project_add_library(stm32cubef2_wrapper)
-project_add_library(stm32cubef2_extionsion)
-project_add_library(esp8266at)
-project_end()
 
+add_ubinos_libraries()
 

@@ -7,36 +7,36 @@
 [submodule "library/seggerrtt"]
 	path = library/seggerrtt
 	url = https://github.com/ubinos/seggerrtt.git
+[submodule "library/CMSIS_5_wrapper"]
+	path = library/CMSIS_5_wrapper
+	url = https://github.com/ubinos/CMSIS_5_wrapper.git
+[submodule "library/CMSIS_5"]
+	path = library/CMSIS_5
+	url = https://github.com/ubinos/CMSIS_5.git
 [submodule "library/nrf5sdk_wrapper"]
 	path = library/nrf5sdk_wrapper
 	url = https://github.com/ubinos/nrf5sdk_wrapper.git
+[submodule "library/nrf5sdk_extension"]
+	path = library/nrf5sdk_extension
+	url = https://github.com/ubinos/nrf5sdk_extension.git
 [submodule "library/nrf5sdk_v17.00.00_lite"]
 	path = library/nrf5sdk_v17.00.00_lite
 	url = https://github.com/ubinos/nrf5sdk_v17.00.00_lite.git
 [submodule "library/stm32cubef2_wrapper"]
 	path = library/stm32cubef2_wrapper
 	url = https://github.com/ubinos/stm32cubef2_wrapper.git
+[submodule "library/stm32cubef2_extension"]
+	path = library/stm32cubef2_extension
+	url = https://github.com/ubinos/stm32cubef2_extension.git
 [submodule "library/stm32cubef2_v01.09.00_lite"]
 	path = library/stm32cubef2_v01.09.00_lite
 	url = https://github.com/ubinos/stm32cubef2_v01.09.00_lite.git
 [submodule "library/esp8266at"]
 	path = library/esp8266at
 	url = https://github.com/ubinos/esp8266at.git
-[submodule "library/nrf5sdk_extension"]
-	path = library/nrf5sdk_extension
-	url = https://github.com/ubinos/nrf5sdk_extension.git
-[submodule "library/stm32cubef2_extension"]
-	path = library/stm32cubef2_extension
-	url = https://github.com/ubinos/stm32cubef2_extension.git
-[submodule "library/CMSIS_5"]
-	path = library/CMSIS_5
-	url = https://github.com/ubinos/CMSIS_5.git
-[submodule "library/CMSIS_5_wrapper"]
-	path = library/CMSIS_5_wrapper
-	url = https://github.com/ubinos/CMSIS_5_wrapper.git
-[submodule "library/tflite-micro"]
-	path = library/tflite-micro
-	url = https://github.com/ubinos/tflite-micro.git
 [submodule "library/tflite-micro_wrapper"]
 	path = library/tflite-micro_wrapper
 	url = https://github.com/ubinos/tflite-micro_wrapper.git
+[submodule "library/tflite-micro"]
+	path = library/tflite-micro
+	url = https://github.com/ubinos/tflite-micro.git
