@@ -5,6 +5,7 @@
     "C_Cpp.loggingLevel": "Debug",
     "C_Cpp.default.configurationProvider": "",
     "C_Cpp.default.compileCommands": "${workspaceFolder}/output/Default/compile_commands.json",
+    "C_Cpp.errorSquiggles": "Disabled",
     "disasexpl.useBinaryParsing": true,
     "disasexpl.associations": {
         "**/*.S": "${workspaceFolder}/output/Default/app.s",

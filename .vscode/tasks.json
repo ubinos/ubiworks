@@ -183,6 +183,17 @@
             }
         },
         {
+            "label": "make debugs",
+            "type": "shell",
+            "command": "make",
+            "args": ["debugs"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
             "label": "make xsel",
             "type": "shell",
             "command": "make",
