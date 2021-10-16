@@ -40,3 +40,33 @@
 [submodule "library/tflite-micro"]
 	path = library/tflite-micro
 	url = https://github.com/ubinos/tflite-micro.git
+[submodule "library/ArduinoCore-API"]
+	path = library/ArduinoCore-API
+	url = https://github.com/ubinos/ArduinoCore-API.git
+[submodule "library/ArduinoCore-API_wrapper"]
+	path = library/ArduinoCore-API_wrapper
+	url = https://github.com/ubinos/ArduinoCore-API_wrapper.git
+[submodule "library/Adafruit_BusIO"]
+	path = library/Adafruit_BusIO
+	url = https://github.com/ubinos/Adafruit_BusIO.git
+[submodule "library/Adafruit_BusIO_wrapper"]
+	path = library/Adafruit_BusIO_wrapper
+	url = https://github.com/ubinos/Adafruit_BusIO_wrapper.git
+[submodule "library/Adafruit_Sensor"]
+	path = library/Adafruit_Sensor
+	url = https://github.com/ubinos/Adafruit_Sensor.git
+[submodule "library/Adafruit_Sensor_wrapper"]
+	path = library/Adafruit_Sensor_wrapper
+	url = https://github.com/ubinos/Adafruit_Sensor_wrapper.git
+[submodule "library/Adafruit_BME280_Library"]
+	path = library/Adafruit_BME280_Library
+	url = https://github.com/ubinos/Adafruit_BME280_Library.git
+[submodule "library/Adafruit_BME280_Library_wrapper"]
+	path = library/Adafruit_BME280_Library_wrapper
+	url = https://github.com/ubinos/Adafruit_BME280_Library_wrapper.git
+[submodule "library/Arduino_LSM9DS1"]
+	path = library/Arduino_LSM9DS1
+	url = https://github.com/ubinos/Arduino_LSM9DS1.git
+[submodule "library/Arduino_LSM9DS1_wrapper"]
+	path = library/Arduino_LSM9DS1_wrapper
+	url = https://github.com/ubinos/Arduino_LSM9DS1_wrapper.git
