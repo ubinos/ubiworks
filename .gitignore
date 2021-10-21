@@ -3,5 +3,7 @@
 /make/custom.mk
 /make/Makefile.bak
 
+/env/
+
 /.settings/
 /.externalToolBuilders/
