@@ -1,9 +1,11 @@
 /output/
-
-/make/custom.mk
-/make/Makefile.bak
-
 /env/
-
 /.settings/
 /.externalToolBuilders/
+
+*.pyc
+
+/make/Makefile.bak
+/make/custom.mk
+/make/custom.py
+
