@@ -12,7 +12,9 @@
         "**/*.c": "${workspaceFolder}/output/Default/app.s",
         "**/*.cpp": "${workspaceFolder}/output/Default/app.s",
     },
+    "git.detectSubmodulesLimit": 100,
+    "terminal.integrated.scrollback": 10000,
     "files.associations": {
         "ubinos.h": "c"
-    },
+    }
 }

@@ -35,6 +35,14 @@
             "targetArchitecture": "arm",
             "miDebuggerPath": "arm-none-eabi-gdb",
             "miDebuggerServerAddress": "localhost:2331",
+        },
+        {
+            "name":"Python: Current File",
+            "type":"python",
+            "request":"launch",
+            "program":"${file}",
+            "cwd": "${fileDirname}",
+            "console":"integratedTerminal"
         }
     ],
 }

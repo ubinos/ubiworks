@@ -15,6 +15,28 @@
             "problemMatcher": [],
         },
         {
+            "label": "make xsel",
+            "type": "shell",
+            "command": "make",
+            "args": ["xsel"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make xconfig",
+            "type": "shell",
+            "command": "make",
+            "args": ["xconfig"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
             "label": "make all",
             "type": "shell",
             "command": "make",
@@ -103,10 +125,10 @@
             "problemMatcher": ["$gcc"],
         },
         {
-            "label": "make load",
+            "label": "make xdserver",
             "type": "shell",
             "command": "make",
-            "args": ["load"],
+            "args": ["xdserver"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
@@ -114,10 +136,10 @@
             "problemMatcher": [],
         },
         {
-            "label": "make run",
+            "label": "make load",
             "type": "shell",
             "command": "make",
-            "args": ["run"],
+            "args": ["load"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
@@ -136,10 +158,10 @@
             "problemMatcher": [],
         },
         {
-            "label": "make debug",
+            "label": "make xrun",
             "type": "shell",
             "command": "make",
-            "args": ["debug"],
+            "args": ["xrun"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
@@ -147,10 +169,10 @@
             "problemMatcher": [],
         },
         {
-            "label": "make attach",
+            "label": "make xdebug",
             "type": "shell",
             "command": "make",
-            "args": ["attach"],
+            "args": ["xdebug"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
@@ -158,46 +180,10 @@
             "problemMatcher": [],
         },
         {
-            "label": "make xconfig",
+            "label": "make xattach",
             "type": "shell",
             "command": "make",
-            "args": ["xconfig"],
-            "options": {
-                "cwd": "${workspaceFolder}/make"
-            },
-            "group": "build",
-            "problemMatcher": [],
-        },
-        {
-            "label": "make menuconfig",
-            "type": "shell",
-            "command": "make",
-            "args": ["menuconfig"],
-            "options": {
-                "cwd": "${workspaceFolder}/make"
-            },
-            "group": "build",
-            "problemMatcher": [],
-            "presentation": {
-                "focus": true,
-            }
-        },
-        {
-            "label": "make debugs",
-            "type": "shell",
-            "command": "make",
-            "args": ["debugs"],
-            "options": {
-                "cwd": "${workspaceFolder}/make"
-            },
-            "group": "build",
-            "problemMatcher": [],
-        },
-        {
-            "label": "make xsel",
-            "type": "shell",
-            "command": "make",
-            "args": ["xsel"],
+            "args": ["xattach"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
