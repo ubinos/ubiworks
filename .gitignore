@@ -3,6 +3,7 @@
 /.settings/
 /.externalToolBuilders/
 
+__pycache__/
 *.pyc
 
 /make/Makefile.bak
