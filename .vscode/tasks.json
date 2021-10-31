@@ -191,10 +191,32 @@
             "problemMatcher": [],
         },
         {
+            "label": "make reset xrun",
+            "type": "shell",
+            "command": "make",
+            "args": ["reset", "xrun"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+        },
+        {
             "label": "make build load",
             "type": "shell",
             "command": "make",
             "args": ["build", "load"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+        },
+        {
+            "label": "make build load xrun",
+            "type": "shell",
+            "command": "make",
+            "args": ["build", "load", "xrun"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
@@ -213,21 +235,10 @@
             "problemMatcher": ["$gcc"],
         },
         {
-            "label": "make reset xrun",
+            "label": "make rebuildd load xrun",
             "type": "shell",
             "command": "make",
-            "args": ["reset", "xrun"],
-            "options": {
-                "cwd": "${workspaceFolder}/make"
-            },
-            "group": "build",
-            "problemMatcher": ["$gcc"],
-        },
-        {
-            "label": "make reset xdebug",
-            "type": "shell",
-            "command": "make",
-            "args": ["reset", "xdebug"],
+            "args": ["rebuildd", "load", "xrun"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
