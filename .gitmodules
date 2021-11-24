@@ -1,72 +1,96 @@
 [submodule "library/ubinos"]
 	path = library/ubinos
 	url = https://github.com/ubinos/ubinos.git
+	branch = master
 [submodule "library/seggerrtt_wrapper"]
 	path = library/seggerrtt_wrapper
 	url = https://github.com/ubinos/seggerrtt_wrapper.git
+	branch = master
 [submodule "library/seggerrtt"]
 	path = library/seggerrtt
 	url = https://github.com/ubinos/seggerrtt.git
+	branch = master
 [submodule "library/CMSIS_5_wrapper"]
 	path = library/CMSIS_5_wrapper
 	url = https://github.com/ubinos/CMSIS_5_wrapper.git
+	branch = master
 [submodule "library/CMSIS_5"]
 	path = library/CMSIS_5
 	url = https://github.com/ubinos/CMSIS_5.git
+	branch = ubinos-master
 [submodule "library/nrf5sdk_wrapper"]
 	path = library/nrf5sdk_wrapper
 	url = https://github.com/ubinos/nrf5sdk_wrapper.git
+	branch = master
 [submodule "library/nrf5sdk_extension"]
 	path = library/nrf5sdk_extension
 	url = https://github.com/ubinos/nrf5sdk_extension.git
+	branch = master
 [submodule "library/nrf5sdk_v17.00.00_lite"]
 	path = library/nrf5sdk_v17.00.00_lite
 	url = https://github.com/ubinos/nrf5sdk_v17.00.00_lite.git
+	branch = master
 [submodule "library/stm32cubef2_wrapper"]
 	path = library/stm32cubef2_wrapper
 	url = https://github.com/ubinos/stm32cubef2_wrapper.git
+	branch = master
 [submodule "library/stm32cubef2_extension"]
 	path = library/stm32cubef2_extension
 	url = https://github.com/ubinos/stm32cubef2_extension.git
+	branch = master
 [submodule "library/stm32cubef2_v01.09.00_lite"]
 	path = library/stm32cubef2_v01.09.00_lite
 	url = https://github.com/ubinos/stm32cubef2_v01.09.00_lite.git
+	branch = master
 [submodule "library/esp8266at"]
 	path = library/esp8266at
 	url = https://github.com/ubinos/esp8266at.git
+	branch = master
 [submodule "library/tflite-micro_wrapper"]
 	path = library/tflite-micro_wrapper
 	url = https://github.com/ubinos/tflite-micro_wrapper.git
+	branch = master
 [submodule "library/tflite-micro"]
 	path = library/tflite-micro
 	url = https://github.com/ubinos/tflite-micro.git
+	branch = main_old
 [submodule "library/ArduinoCore-API"]
 	path = library/ArduinoCore-API
 	url = https://github.com/ubinos/ArduinoCore-API.git
+	branch = master
 [submodule "library/ArduinoCore-API_wrapper"]
 	path = library/ArduinoCore-API_wrapper
 	url = https://github.com/ubinos/ArduinoCore-API_wrapper.git
+	branch = master
 [submodule "library/Adafruit_BusIO"]
 	path = library/Adafruit_BusIO
 	url = https://github.com/ubinos/Adafruit_BusIO.git
+	branch = ubinos-master
 [submodule "library/Adafruit_BusIO_wrapper"]
 	path = library/Adafruit_BusIO_wrapper
 	url = https://github.com/ubinos/Adafruit_BusIO_wrapper.git
+	branch = master
 [submodule "library/Adafruit_Sensor"]
 	path = library/Adafruit_Sensor
 	url = https://github.com/ubinos/Adafruit_Sensor.git
+	branch = ubinos-master
 [submodule "library/Adafruit_Sensor_wrapper"]
 	path = library/Adafruit_Sensor_wrapper
 	url = https://github.com/ubinos/Adafruit_Sensor_wrapper.git
+	branch = master
 [submodule "library/Adafruit_BME280_Library"]
 	path = library/Adafruit_BME280_Library
 	url = https://github.com/ubinos/Adafruit_BME280_Library.git
+	branch = ubinos-master
 [submodule "library/Adafruit_BME280_Library_wrapper"]
 	path = library/Adafruit_BME280_Library_wrapper
 	url = https://github.com/ubinos/Adafruit_BME280_Library_wrapper.git
+	branch = master
 [submodule "library/Arduino_LSM9DS1"]
 	path = library/Arduino_LSM9DS1
 	url = https://github.com/ubinos/Arduino_LSM9DS1.git
+	branch = ubinos-master
 [submodule "library/Arduino_LSM9DS1_wrapper"]
 	path = library/Arduino_LSM9DS1_wrapper
 	url = https://github.com/ubinos/Arduino_LSM9DS1_wrapper.git
+	branch = master
