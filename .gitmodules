@@ -53,7 +53,7 @@
 [submodule "library/tflite-micro"]
 	path = library/tflite-micro
 	url = https://github.com/ubinos/tflite-micro.git
-	branch = main_old
+	branch = ubinos-master
 [submodule "library/ArduinoCore-API"]
 	path = library/ArduinoCore-API
 	url = https://github.com/ubinos/ArduinoCore-API.git
