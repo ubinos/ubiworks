@@ -94,3 +94,11 @@
 	path = library/Arduino_LSM9DS1_wrapper
 	url = https://github.com/ubinos/Arduino_LSM9DS1_wrapper.git
 	branch = master
+[submodule "library/DHT-sensor-library_wrapper"]
+	path = library/DHT-sensor-library_wrapper
+	url = git@github.com:ubinos/DHT-sensor-library_wrapper.git
+	branch = master
+[submodule "library/DHT-sensor-library"]
+	path = library/DHT-sensor-library
+	url = git@github.com:ubinos/DHT-sensor-library.git
+	branch = ubinos-master
