@@ -213,6 +213,17 @@
             "problemMatcher": ["$gcc"],
         },
         {
+            "label": "make upgradea",
+            "type": "shell",
+            "command": "make",
+            "args": ["upgradea"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+        },
+        {
             "label": "make reset xrun",
             "type": "shell",
             "command": "make",
