@@ -102,3 +102,7 @@
 	path = library/DHT-sensor-library
 	url = https://github.com/ubinos/DHT-sensor-library.git
 	branch = ubinos-master
+[submodule "library/mp_course_examples"]
+	path = library/mp_course_examples
+	url = https://github.com/ubinos/mp_course_examples.git
+	branch = master

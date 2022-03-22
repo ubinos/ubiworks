@@ -1,7 +1,7 @@
 LIBRARY_DIR ?= ../library
 OUTPUT_BASE_DIR ?= ..
 
-LIBRARY_UPGRADE_LIST ?= ubinos seggerrtt seggerrtt_wrapper CMSIS_5 CMSIS_5_wrapper nrf5sdk_wrapper nrf5sdk_extension nrf5sdk_v17.00.00_lite stm32cubef2_wrapper stm32cubef2_extension stm32cubef2_v01.09.00_lite esp8266at tflite-micro_wrapper tflite-micro ArduinoCore-API_wrapper ArduinoCore-API Adafruit_BusIO_wrapper Adafruit_BusIO Adafruit_Sensor_wrapper Adafruit_Sensor Arduino_LSM9DS1_wrapper Arduino_LSM9DS1 Adafruit_BME280_Library_wrapper Adafruit_BME280_Library DHT-sensor-library_wrapper DHT-sensor-library
+LIBRARY_UPGRADE_LIST ?= ubinos seggerrtt seggerrtt_wrapper CMSIS_5 CMSIS_5_wrapper nrf5sdk_wrapper nrf5sdk_extension nrf5sdk_v17.00.00_lite stm32cubef2_wrapper stm32cubef2_extension stm32cubef2_v01.09.00_lite esp8266at tflite-micro_wrapper tflite-micro ArduinoCore-API_wrapper ArduinoCore-API Adafruit_BusIO_wrapper Adafruit_BusIO Adafruit_Sensor_wrapper Adafruit_Sensor Arduino_LSM9DS1_wrapper Arduino_LSM9DS1 Adafruit_BME280_Library_wrapper Adafruit_BME280_Library DHT-sensor-library_wrapper DHT-sensor-library mp_course_examples
 
 help: common-help
 
@@ -22,5 +22,6 @@ zbatch-%: common-zbatch-%
 	make -C ../library/Adafruit_BME280_Library_wrapper/make     OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) $@
 	make -C ../library/Arduino_LSM9DS1_wrapper/make             OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) $@
 	make -C ../library/DHT-sensor-library_wrapper/make          OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) $@
+	make -C ../library/mp_course_examples/make                  OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) $@
 	# make -C ../library/esp8266at/make                           OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) $@
 
