@@ -19,7 +19,7 @@
             "targetArchitecture": "arm",
             "miDebuggerPath": "arm-none-eabi-gdb",
             "miDebuggerServerAddress": "localhost:2331",
-            "miDebuggerArgs": "-q -x ${workspaceFolder}/output/Default/gdb_init.gdb",
+            "miDebuggerArgs": "-q -x \"${workspaceFolder}/output/Default/gdb_init.gdb\"",
         },
         {
             "name": "ARM Target",
@@ -36,7 +36,7 @@
             "targetArchitecture": "arm",
             "miDebuggerPath": "arm-none-eabi-gdb",
             "miDebuggerServerAddress": "localhost:2331",
-            "miDebuggerArgs": "-q -x ${workspaceFolder}/output/Default/gdb_init.gdb",
+            "miDebuggerArgs": "-q -x \"${workspaceFolder}/output/Default/gdb_init.gdb\"",
         },
         {
             "name":"Python: Current File",
