@@ -106,3 +106,19 @@
 	path = library/mp_course_examples
 	url = https://github.com/ubinos/mp_course_examples.git
 	branch = master
+[submodule "library/libcrc"]
+	path = library/libcrc
+	url = git@github.com:ubinos/libcrc.git
+	branch = ubinos-master
+[submodule "library/libcrc_wrapper"]
+	path = library/libcrc_wrapper
+	url = git@github.com:ubinos/libcrc_wrapper.git
+	branch = master
+[submodule "library/jansson"]
+	path = library/jansson
+	url = git@github.com:ubinos/jansson.git
+	branch = ubinos-master
+[submodule "library/jansson_wrapper"]
+	path = library/jansson_wrapper
+	url = git@github.com:ubinos/jansson_wrapper.git
+	branch = master
