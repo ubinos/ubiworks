@@ -17,7 +17,7 @@
 [submodule "library/CMSIS_5"]
 	path = library/CMSIS_5
 	url = https://github.com/ubinos/CMSIS_5.git
-	branch = ubinos-master
+	branch = ubinos-main
 [submodule "library/nrf5sdk_wrapper"]
 	path = library/nrf5sdk_wrapper
 	url = https://github.com/ubinos/nrf5sdk_wrapper.git
@@ -53,11 +53,11 @@
 [submodule "library/tflite-micro"]
 	path = library/tflite-micro
 	url = https://github.com/ubinos/tflite-micro.git
-	branch = ubinos-master
+	branch = ubinos-main
 [submodule "library/ArduinoCore-API"]
 	path = library/ArduinoCore-API
 	url = https://github.com/ubinos/ArduinoCore-API.git
-	branch = master
+	branch = ubinos-main
 [submodule "library/ArduinoCore-API_wrapper"]
 	path = library/ArduinoCore-API_wrapper
 	url = https://github.com/ubinos/ArduinoCore-API_wrapper.git
@@ -122,3 +122,19 @@
 	path = library/jansson_wrapper
 	url = https://github.com/ubinos/jansson_wrapper.git
 	branch = master
+[submodule "library/flatbuffers"]
+	path = library/flatbuffers
+	url = https://github.com/ubinos/flatbuffers.git
+	branch = ubinos-main
+[submodule "library/kissfft"]
+	path = library/kissfft
+	url = https://github.com/ubinos/kissfft.git
+	branch = ubinos-main
+[submodule "library/gemmlowp"]
+	path = library/gemmlowp
+	url = https://github.com/ubinos/gemmlowp.git
+	branch = ubinos-main
+[submodule "library/ruy"]
+	path = library/ruy
+	url = https://github.com/ubinos/ruy.git
+	branch = ubinos-main
