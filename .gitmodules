@@ -138,3 +138,11 @@
 	path = library/ruy
 	url = https://github.com/ubinos/ruy.git
 	branch = ubinos-main
+[submodule "library/googletest"]
+	path = library/googletest
+	url = https://github.com/ubinos/googletest.git
+	branch = ubinos-main
+[submodule "library/googletest_wrapper"]
+	path = library/googletest_wrapper
+	url = https://github.com/ubinos/googletest_wrapper.git
+	branch = main
