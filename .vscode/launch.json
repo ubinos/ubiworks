@@ -40,16 +40,12 @@
         },
         {
             "name": "Local LLVM (build)",
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "launch",
             "preLaunchTask": "make build",
             "program": "${workspaceFolder}/output/Default/app",
             "args": [],
-            "stopAtEntry": true,
             "cwd": "${workspaceFolder}/output/Default",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
         },
         {
             "name": "Local GDB (build)",
