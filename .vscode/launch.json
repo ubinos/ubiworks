@@ -45,6 +45,7 @@
             "preLaunchTask": "make build",
             "program": "${workspaceFolder}/output/Default/app",
             "args": [],
+            "stopOnEntry": true,
             "cwd": "${workspaceFolder}/output/Default",
         },
         {
