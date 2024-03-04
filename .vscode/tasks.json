@@ -15,6 +15,17 @@
             "problemMatcher": [],
         },
         {
+            "label": "make xmgr",
+            "type": "shell",
+            "command": "make",
+            "args": ["xmgr"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
             "label": "make xsel",
             "type": "shell",
             "command": "make",
