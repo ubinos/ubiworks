@@ -202,39 +202,6 @@
             "problemMatcher": [],
         },
         {
-            "label": "make upgrade",
-            "type": "shell",
-            "command": "make",
-            "args": ["upgrade"],
-            "options": {
-                "cwd": "${workspaceFolder}/make"
-            },
-            "group": "build",
-            "problemMatcher": ["$gcc"],
-        },
-        {
-            "label": "make upgradef",
-            "type": "shell",
-            "command": "make",
-            "args": ["upgradef"],
-            "options": {
-                "cwd": "${workspaceFolder}/make"
-            },
-            "group": "build",
-            "problemMatcher": ["$gcc"],
-        },
-        {
-            "label": "make upgradea",
-            "type": "shell",
-            "command": "make",
-            "args": ["upgradea"],
-            "options": {
-                "cwd": "${workspaceFolder}/make"
-            },
-            "group": "build",
-            "problemMatcher": ["$gcc"],
-        },
-        {
             "label": "make reset xrun",
             "type": "shell",
             "command": "make",
