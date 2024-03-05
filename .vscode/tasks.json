@@ -255,6 +255,17 @@
             },
             "group": "build",
             "problemMatcher": ["$gcc"],
+        },
+        {
+            "label": "make doc",
+            "type": "shell",
+            "command": "make",
+            "args": ["doc"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
         }
     ]
 }
