@@ -13,7 +13,7 @@ ifneq ("$(wildcard $(CONFIG_DIR)/$(CONFIG_NAME).mk)","")# if $(CONFIG_DIR)/$(CON
 BUILD_TYPE_MAKE__MAKE_DIR = $(shell python "$(_TOOLBOX)" get_make_dir_from_config_file $(CONFIG_DIR)/$(CONFIG_NAME).mk)
 all config configd build clean cleand rebuild rebuildd dserver xdserver load reset run xrun debug xdebug attach xattach xconfig menuconfig doc test env cleanenv :
 ifneq ($(strip $(BUILD_TYPE_MAKE__MAKE_DIR)),)
-	make -C $(BUILD_TYPE_MAKE__MAKE_DIR) -f makefile.mk         OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) CONFIG_DIR=$(realpath $(CONFIG_DIR)) CONFIG_NAME=$(CONFIG_NAME) DEBUG_SERVER_SERIAL=$(DEBUG_SERVER_SERIAL) DEBUG_SERVER_PORT=$(DEBUG_SERVER_PORT) $@
+	make -C ../$(BUILD_TYPE_MAKE__MAKE_DIR) -f makefile.mk         OUTPUT_BASE_DIR=$(realpath $(OUTPUT_BASE_DIR)) LIBRARY_DIR=$(realpath $(LIBRARY_DIR)) CONFIG_DIR=$(realpath $(CONFIG_DIR)) CONFIG_NAME=$(CONFIG_NAME) DEBUG_SERVER_SERIAL=$(DEBUG_SERVER_SERIAL) DEBUG_SERVER_PORT=$(DEBUG_SERVER_PORT) $@
 endif
 endif
 endif
