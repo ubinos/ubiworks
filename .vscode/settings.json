@@ -13,6 +13,7 @@
         "**/*.cpp": "${workspaceFolder}/output/Default/app.s",
         "**/*.cc": "${workspaceFolder}/output/Default/app.s",
     },
+    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output/Default_latex",
     "git.detectSubmodulesLimit": 100,
     "terminal.integrated.scrollback": 10000,
     "files.associations": {
