@@ -266,6 +266,61 @@
             },
             "group": "build",
             "problemMatcher": [],
+        },
+        {
+            "label": "make opendoc",
+            "type": "shell",
+            "command": "make",
+            "args": ["opendoc"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make cleandoc",
+            "type": "shell",
+            "command": "make",
+            "args": ["cleandoc"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make env",
+            "type": "shell",
+            "command": "make",
+            "args": ["env"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make cleanenv",
+            "type": "shell",
+            "command": "make",
+            "args": ["cleanenv"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "make test",
+            "type": "shell",
+            "command": "make",
+            "args": ["test"],
+            "options": {
+                "cwd": "${workspaceFolder}/make"
+            },
+            "group": "build",
+            "problemMatcher": [],
         }
     ]
 }
