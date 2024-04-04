@@ -16,6 +16,7 @@
     "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output/Default_latex",
     "git.detectSubmodulesLimit": 100,
     "terminal.integrated.scrollback": 10000,
+    "cmake.configureOnOpen": false,
     "files.associations": {
         "ubinos.h": "c"
     }

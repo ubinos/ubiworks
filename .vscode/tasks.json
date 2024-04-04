@@ -268,10 +268,10 @@
             "problemMatcher": [],
         },
         {
-            "label": "make opendoc",
+            "label": "make xopendoc",
             "type": "shell",
             "command": "make",
-            "args": ["opendoc"],
+            "args": ["xopendoc"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
