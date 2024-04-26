@@ -268,10 +268,10 @@
             "problemMatcher": [],
         },
         {
-            "label": "make xopendoc",
+            "label": "make cleandoc",
             "type": "shell",
             "command": "make",
-            "args": ["xopendoc"],
+            "args": ["cleandoc"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
@@ -279,10 +279,10 @@
             "problemMatcher": [],
         },
         {
-            "label": "make cleandoc",
+            "label": "make xopendoc",
             "type": "shell",
             "command": "make",
-            "args": ["cleandoc"],
+            "args": ["xopendoc"],
             "options": {
                 "cwd": "${workspaceFolder}/make"
             },
