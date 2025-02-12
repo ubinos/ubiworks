@@ -1,5 +1,5 @@
-CONFIG_DIR ?= ../library/ubinos/app
-CONFIG_NAME ?= hello_world_netduinoplus2_qemu
+CONFIG_DIR ?= ../library/ubinos/env
+CONFIG_NAME ?= ubinos_venv
 # COMPILER_LAUNCHER ?= ccache
 
 include makefile.mk
