@@ -1,6 +1,7 @@
 {
     "explorer.autoReveal": true,
-    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/helloworld_c/compile_commands.json",
     "editor.renderWhitespace": "all",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/helloworld_c/compile_commands.json",
+    "cmake.generator": "Unix Makefiles",
     "git.detectSubmodulesLimit": 120
 }
