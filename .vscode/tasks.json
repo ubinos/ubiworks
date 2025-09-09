@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "target app reset",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                ".",
+                "--target",
+                "reset"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build/helloworld_c"
+            },
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

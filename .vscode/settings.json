@@ -1,0 +1,6 @@
+{
+    "explorer.autoReveal": true,
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/helloworld_c/compile_commands.json",
+    "editor.renderWhitespace": "all",
+    "git.detectSubmodulesLimit": 120
+}

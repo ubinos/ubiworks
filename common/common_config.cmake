@@ -1,0 +1,3 @@
+set(UBI_CONFIG_WIFI_SSID "mywifi")
+set(UBI_CONFIG_WIFI_PW "mypw")
+set(UBI_CONFIG_SERVER_ADDR "192.168.1.2")

@@ -1,0 +1,9 @@
+build/
+log/
+venv/
+node_modules/
+package-lock.json
+config.cmake.bak
+
+__pycache__/
+*.pyc

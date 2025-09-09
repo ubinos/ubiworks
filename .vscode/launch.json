@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "local app debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/build/helloworld_c",
+            "program": "${workspaceFolder}/build/helloworld_c/app",
+            "MIMode": "gdb",
+            "args": []
+        },
+        {
+            "name": "target app debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/build/pico_hello_world_freertos",
+            "program": "${workspaceFolder}/build/pico_hello_world_freertos/app.elf",
+            "preLaunchTask": "target app reset",
+            "args": [],
+            "environment": [],
+            "externalConsole": false,
+            "filterStderr": true,
+            "hardwareBreakpoints": {
+                "require": true,
+                "limit": 4
+            },
+            "MIMode": "gdb",
+            "targetArchitecture": "arm",
+            "miDebuggerPath": "arm-none-eabi-gdb",
+            "miDebuggerServerAddress": "localhost:2331",
+            "miDebuggerArgs": "-q -x \"gdb_init.gdb\""
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
