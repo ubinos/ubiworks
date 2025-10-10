@@ -68,6 +68,14 @@ add_custom_target(build ALL
     VERBATIM
 )
 
+add_custom_target(rebuild
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target rebuild ${UBI_PARALLEL_FLAG} --config $<CONFIG>
+    COMMENT "---- Clean, build (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
 add_custom_target(rebuildd
     COMMAND ${CMAKE_COMMAND} --build . --target cleand
     COMMAND ${CMAKE_COMMAND} --build . --target config
