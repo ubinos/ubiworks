@@ -3,5 +3,5 @@
     "explorer.autoReveal": true,
     "editor.renderWhitespace": "all",
     "git.detectSubmodulesLimit": 120,
-    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/pico_hello_world_freertos/compile_commands.json"
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/helloworld_c/compile_commands.json"
 }
