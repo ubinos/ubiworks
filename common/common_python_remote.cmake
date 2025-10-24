@@ -1,18 +1,18 @@
 include("${CMAKE_CURRENT_LIST_DIR}/common_python.cmake")
 
-set(_python_load_cmd)
+set(_python_rsync_cmd)
 foreach(_sync_dir IN LISTS PROJECT_PYTHON_REMOTE_SYNC_DIRS)
-    list(APPEND _python_load_cmd
+    list(APPEND _python_rsync_cmd
         COMMAND rsync -av
             "${PROJECT_PYTHON_REMOTE_SOURCE_BASE}/${_sync_dir}/"
             "${PROJECT_PYTHON_REMOTE_USER}@${PROJECT_PYTHON_REMOTE_HOST}:${PROJECT_PYTHON_REMOTE_TARGET_BASE}/${_sync_dir}/"
     )
 endforeach()
 
-message(STATUS "Load Command: ${_python_load_cmd}")
-add_custom_target(load
+message(STATUS "Rsync Command: ${_python_rsync_cmd}")
+add_custom_target(rsync
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-    ${_python_load_cmd}
+    ${_python_rsync_cmd}
     VERBATIM
 )
 
@@ -33,5 +33,3 @@ add_custom_target(debug
     USES_TERMINAL
     VERBATIM
 )
-
-

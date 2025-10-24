@@ -114,6 +114,14 @@ add_custom_target(xdserver
     VERBATIM
 )
 
+add_custom_target(rsync
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target rsync --config $<CONFIG>
+    COMMENT "---- Sync with remote (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
 add_custom_target(xlibmgr
     WORKING_DIRECTORY ${PROJECT_BASE_DIR}
     COMMAND ubitool libmgr

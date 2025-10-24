@@ -1,6 +1,7 @@
 include("${CMAKE_CURRENT_LIST_DIR}/common_python.cmake")
 
-add_custom_target(load
+message(STATUS "Rsync Command: ${_python_rsync_cmd}")
+add_custom_target(rsync
 )
 
 set(_python_run_cmd python -u ${PROJECT_PYTHON_MAIN} ${PROJECT_PYTHON_MAIN_OPTION})
