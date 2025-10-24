@@ -16,7 +16,7 @@ add_custom_target(rsync
     VERBATIM
 )
 
-set(_python_run_cmd ssh -CY "${PROJECT_PYTHON_REMOTE_USER}@${PROJECT_PYTHON_REMOTE_HOST}" "cd ${PROJECT_PYTHON_MAIN_DIR} && . ${PROJECT_PYTHON_VENV_DIR}/bin/activate && python -u ${PROJECT_PYTHON_MAIN} ${PROJECT_PYTHON_MAIN_OPTION}")
+set(_python_run_cmd ssh -CYt "${PROJECT_PYTHON_REMOTE_USER}@${PROJECT_PYTHON_REMOTE_HOST}" "cd ${PROJECT_PYTHON_MAIN_DIR} && . ${PROJECT_PYTHON_REMOTE_VENV}/bin/activate && python -u ${PROJECT_PYTHON_MAIN} ${PROJECT_PYTHON_MAIN_OPTION}")
 message(STATUS "Run Command: ${_python_run_cmd}")
 add_custom_target(run
     WORKING_DIRECTORY ${PROJECT_PYTHON_MAIN_DIR}
@@ -25,7 +25,7 @@ add_custom_target(run
     VERBATIM
 )
 
-set(_python_debug_cmd ssh -CY "${PROJECT_PYTHON_REMOTE_USER}@${PROJECT_PYTHON_REMOTE_HOST}" "cd ${PROJECT_PYTHON_MAIN_DIR} && . ${PROJECT_PYTHON_VENV_DIR}/bin/activate && python -u --debug ${PROJECT_PYTHON_MAIN} ${PROJECT_PYTHON_MAIN_OPTION}")
+set(_python_debug_cmd ssh -CYt "${PROJECT_PYTHON_REMOTE_USER}@${PROJECT_PYTHON_REMOTE_HOST}" "cd ${PROJECT_PYTHON_MAIN_DIR} && . ${PROJECT_PYTHON_REMOTE_VENV}/bin/activate && python -u --debug ${PROJECT_PYTHON_MAIN} ${PROJECT_PYTHON_MAIN_OPTION}")
 message(STATUS "Debug Command: ${_python_debug_cmd}")
 add_custom_target(debug
     WORKING_DIRECTORY ${PROJECT_PYTHON_MAIN_DIR}
