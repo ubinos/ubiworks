@@ -8,7 +8,7 @@ set(PROJECT_SRC_DIR "${CMAKE_CURRENT_LIST_DIR}")
 
 ##
 include("${PROJECT_BASE_DIR}/common/common_config.cmake")
-include("${PROJECT_BASE_DIR}/common/common_local_pre_target.cmake")
+include("${PROJECT_BASE_DIR}/common/common_c_cpp_local_pre.cmake")
 
 
 project(${PROJECT_TARGET_NAME} C CXX ASM)
@@ -28,4 +28,4 @@ target_include_directories(${PROJECT_TARGET_NAME} PRIVATE
 )
 
 ##
-include("${PROJECT_BASE_DIR}/common/common_local_post_target.cmake")
+include("${PROJECT_BASE_DIR}/common/common_c_cpp_local_post.cmake")

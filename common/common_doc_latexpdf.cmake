@@ -4,6 +4,9 @@ add_custom_target(xdserver
 add_custom_target(load
 )
 
+add_custom_target(rsync
+)
+
 add_custom_target(build
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
     COMMAND sphinx-build -M latexpdf "${PROJECT_DOC_DIR}" .

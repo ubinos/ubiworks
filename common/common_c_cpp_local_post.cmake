@@ -49,6 +49,9 @@ add_custom_target(xdserver
 add_custom_target(load
 )
 
+add_custom_target(rsync
+)
+
 add_custom_target(build
     COMMAND ${CMAKE_COMMAND} --build . --target all
     VERBATIM
