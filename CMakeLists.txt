@@ -21,16 +21,6 @@ add_custom_target(_delete_build_base
     VERBATIM
 )
 
-
-add_custom_target(_dserver
-    WORKING_DIRECTORY ${UBI_BUILD_DIR}
-    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
-            ${CMAKE_COMMAND} --build . --target dserver ${UBI_PARALLEL_FLAG} --config $<CONFIG>
-    COMMENT "---- Debug server (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
-    VERBATIM
-)
-
-
 add_custom_target(cleand
     COMMAND ${CMAKE_COMMAND} -E remove_directory "${UBI_BUILD_DIR}"
     COMMENT "---- Clean, delete (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
@@ -105,6 +95,14 @@ add_custom_target(run
     COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
             ${CMAKE_COMMAND} --build . --target run --config $<CONFIG>
     COMMENT "---- Run (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
+add_custom_target(dserver
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target dserver ${UBI_PARALLEL_FLAG} --config $<CONFIG>
+    COMMENT "---- Debug server (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
     VERBATIM
 )
 

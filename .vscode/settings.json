@@ -1,7 +1,7 @@
 {
+    "cmake.generator": "Unix Makefiles",
     "explorer.autoReveal": true,
     "editor.renderWhitespace": "all",
-    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/helloworld_c/compile_commands.json",
-    "cmake.generator": "Unix Makefiles",
-    "git.detectSubmodulesLimit": 120
+    "git.detectSubmodulesLimit": 120,
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/pico_hello_world_freertos/compile_commands.json"
 }
