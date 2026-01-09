@@ -28,7 +28,7 @@
                 "build"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/build/hi_world_netduinoplus2_baremetal_qemu"
+                "cwd": "${workspaceFolder}/build/helloworld_c"
             },
             "group": "build",
             "problemMatcher": []
@@ -44,7 +44,7 @@
                 "load"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/build/hi_world_netduinoplus2_baremetal_qemu"
+                "cwd": "${workspaceFolder}/build/helloworld_c"
             },
             "group": "build",
             "problemMatcher": []
