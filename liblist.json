@@ -1,12 +1,12 @@
 [
 
     {
-        "name": "ece2knu_course_materials",
-        "url": "https://github.com/ubinos-edu/ece2knu_course_materials.git",
+        "name": "ubinos_base",
+        "url": "https://github.com/ubinos/ubinos_base.git",
         "branch_tag_commit": {"type": "branch", "name": "ubinos-main"},
         "upstreams": [
         ],
-        "description": "Kyungpook National University electronic circuit experiment 2 course materials"
+        "description": "Ubinos base library"
     }
-
+   
 ]

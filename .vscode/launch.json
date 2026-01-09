@@ -32,6 +32,27 @@
             "miDebuggerArgs": "-q -x \"gdb_init.gdb\""
         },
         {
+            "name": "target app debug (load)",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/build/pico_hello_world_freertos/build/Default",
+            "program": "${workspaceFolder}/build/pico_hello_world_freertos/build/Default/app.elf",
+            "preLaunchTask": "target app load",
+            "args": [],
+            "environment": [],
+            "externalConsole": false,
+            "filterStderr": true,
+            "hardwareBreakpoints": {
+                "require": true,
+                "limit": 4
+            },
+            "MIMode": "gdb",
+            "targetArchitecture": "arm",
+            "miDebuggerPath": "arm-none-eabi-gdb",
+            "miDebuggerServerAddress": "localhost:2331",
+            "miDebuggerArgs": "-q -x \"gdb_init.gdb\""
+        },
+        {
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",

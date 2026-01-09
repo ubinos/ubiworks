@@ -2,6 +2,7 @@ build/
 log/
 temp/
 venv/
+venv_*/
 node_modules/
 package-lock.json
 config.cmake.bak

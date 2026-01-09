@@ -36,3 +36,5 @@ jupyter
 mpremote
 
 opencv-python
+
+PySide6

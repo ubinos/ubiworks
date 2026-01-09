@@ -1,6 +1,0 @@
-set(UBI_CONFIG_WIFI_SSID "mywifi")
-set(UBI_CONFIG_WIFI_PW "mypw")
-set(UBI_CONFIG_SERVER_ADDR "localhost")
-
-set(UBI_CONFIG_REMOTE_HOST "192.168.1.2")
-set(UBI_CONFIG_REMOTE_USER "myid")

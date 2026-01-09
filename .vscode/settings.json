@@ -3,5 +3,8 @@
     "explorer.autoReveal": true,
     "editor.renderWhitespace": "all",
     "git.detectSubmodulesLimit": 120,
+    "xml.format.splitAttributes": "preserve",
+    "xml.format.joinContentLines": true,
+    "xml.format.maxLineWidth": 10000,
     "C_Cpp.default.compileCommands": "${workspaceFolder}/build/helloworld_c/compile_commands.json"
 }

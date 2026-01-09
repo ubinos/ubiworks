@@ -16,6 +16,38 @@
             },
             "group": "build",
             "problemMatcher": []
+        },
+        {
+            "label": "target app build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                ".",
+                "--target",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build/hi_world_netduinoplus2_baremetal_qemu"
+            },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "target app load",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                ".",
+                "--target",
+                "load"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build/hi_world_netduinoplus2_baremetal_qemu"
+            },
+            "group": "build",
+            "problemMatcher": []
         }
     ]
 }
