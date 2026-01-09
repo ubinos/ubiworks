@@ -1,6 +1,22 @@
 [
 
     {
+        "name": "mp_course_materials",
+        "url": "https://github.com/ubinos-edu/mp_course_materials.git",
+        "branch_tag_commit": {"type": "branch", "name": "ubinos-main"},
+        "upstreams": [
+        ],
+        "description": "Microprocessor course materials"
+    },
+    {
+        "name": "ece2knu_course_materials",
+        "url": "https://github.com/ubinos-edu/ece2knu_course_materials.git",
+        "branch_tag_commit": {"type": "branch", "name": "ubinos-main"},
+        "upstreams": [
+        ],
+        "description": "Kyungpook National University electronic circuit experiment 2 course materials"
+    },
+    {
         "name": "ubinos",
         "url": "https://github.com/ubinos/ubinos.git",
         "branch_tag_commit": {"type": "branch", "name": "ubinos-main"},
