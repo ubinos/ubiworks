@@ -1,6 +1,14 @@
 [
 
     {
+        "name": "ubinos",
+        "url": "https://github.com/ubinos/ubinos.git",
+        "branch_tag_commit": {"type": "branch", "name": "ubinos-main"},
+        "upstreams": [
+        ],
+        "description": "Ubinos library"
+    },
+    {
         "name": "ubinos_base",
         "url": "https://github.com/ubinos/ubinos_base.git",
         "branch_tag_commit": {"type": "branch", "name": "ubinos-main"},
