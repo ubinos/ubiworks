@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "local app debug",
+            "name": "lcad - local app debug",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}/build/helloworld_c",
@@ -11,7 +11,7 @@
             "args": []
         },
         {
-            "name": "target app debug",
+            "name": "tgad - target app debug",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}/build/hello_world_netduinoplus2_qemu/build/Default",
@@ -32,7 +32,7 @@
             "miDebuggerArgs": "-q -x \"gdb_init.gdb\""
         },
         {
-            "name": "target app debug (load)",
+            "name": "tgadl - target app debug (load)",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}/build/hello_world_netduinoplus2_qemu/build/Default",
@@ -53,11 +53,26 @@
             "miDebuggerArgs": "-q -x \"gdb_init.gdb\""
         },
         {
-            "name": "Python Debugger: Current File",
+            "name": "pydcf - Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}"
+        },
+        {
+            "name": "rslad - rust local app debug",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--manifest-path=${workspaceFolder}/lib/rust_temp/app/rust_ex001_hello_world/Cargo.toml",
+                    "--target-dir=${workspaceFolder}/build/rust_ex001_hello_world"
+                ]
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}/lib/rust_temp/app/rust_ex001_hello_world"
         }
     ]
 }

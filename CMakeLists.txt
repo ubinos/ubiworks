@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
+
 project(ubiworks NONE)
 
 include(config.cmake)
@@ -20,17 +21,8 @@ if(CMAKE_VERSION VERSION_GREATER_EQUAL "3.12")
     set(UBI_PARALLEL_FLAG --parallel)
 endif()
 
-##
-add_custom_target(all_build ALL
-    WORKING_DIRECTORY ${UBI_BUILD_DIR}
-    COMMAND ${CMAKE_COMMAND} --build . --target rsync
-    COMMAND ${CMAKE_COMMAND} --build . --target prebuild
-    COMMAND ${CMAKE_COMMAND} --build . --target build
-    COMMENT "---- All: rsync prebuild, build  (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
-    VERBATIM
-)
+####
 
-##
 add_custom_target(xcm
     WORKING_DIRECTORY ${PROJECT_BASE_DIR}
     COMMAND ubitool configsel ${_ubitool_configsel_opt}
@@ -43,50 +35,49 @@ add_custom_target(xlm
     VERBATIM
 )
 
-##
-add_custom_target(configd
-    COMMAND ${CMAKE_COMMAND} --build . --target cleand
-    COMMAND ${CMAKE_COMMAND} --build . --target config
-    COMMENT "---- Delete and make config (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
-    VERBATIM
-)
+####
 
-add_custom_target(rebuildd
-    COMMAND ${CMAKE_COMMAND} --build . --target configd
-    COMMAND ${CMAKE_COMMAND} --build . --target rebuild
-    COMMENT "---- Delete and make config, build (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
-    VERBATIM
-)
-
-##
 add_custom_target(config
     COMMAND ${CMAKE_COMMAND} -E make_directory "${UBI_BUILD_DIR}"
     COMMAND ${CMAKE_COMMAND} -E chdir "${UBI_BUILD_DIR}"
             ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
             ${CMAKE_COMMAND} -G "Unix Makefiles" "${UBI_CONFIG}" ${_cmake_opt}  --fresh
-    COMMENT "---- Make config (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    COMMENT "---- Config (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
     VERBATIM
 )
 
-add_custom_target(cleand
-    COMMAND ${CMAKE_COMMAND} --build . --target config
-    COMMAND ${CMAKE_COMMAND} -E chdir "${UBI_BUILD_DIR}"
-            ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
-            ${CMAKE_COMMAND} --build . --target cleand --config $<CONFIG>
+add_custom_target(clean_config
     COMMAND ${CMAKE_COMMAND} -E remove_directory "${UBI_BUILD_DIR}"
-    COMMENT "---- Delete config (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    COMMENT "---- Clean config result (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
     VERBATIM
 )
 
-##
+add_custom_target(rebuildd ALL
+    COMMAND ${CMAKE_COMMAND} --build . --target clean_config
+    COMMAND ${CMAKE_COMMAND} --build . --target config
+    COMMAND ${CMAKE_COMMAND} --build . --target rebuild
+    COMMENT "---- clean_config, config, and rebuild (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
+####
+
 add_custom_target(xconfig
     WORKING_DIRECTORY ${UBI_BUILD_DIR}
-    COMMAND cmake-gui "${UBI_CONFIG}"
-    COMMENT "---- Config in GUI (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target xconfig --config $<CONFIG>
+    COMMENT "---- xconfig (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
     VERBATIM
 )
 
-##
+add_custom_target(menuconfig
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target menuconfig --config $<CONFIG>
+    COMMENT "---- menuconfig (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
 add_custom_target(rsync
     WORKING_DIRECTORY ${UBI_BUILD_DIR}
     COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
@@ -111,6 +102,30 @@ add_custom_target(build
     VERBATIM
 )
 
+add_custom_target(postbuild
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target postbuild --config $<CONFIG>
+    COMMENT "---- Postbuild (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
+add_custom_target(clean_prebuild
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target clean_prebuild --config $<CONFIG>
+    COMMENT "---- Clean prebuild result (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
+add_custom_target(clean_build
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target clean_build --config $<CONFIG>
+    COMMENT "---- Clean build result (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
 add_custom_target(rebuild
     WORKING_DIRECTORY ${UBI_BUILD_DIR}
     COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
@@ -119,20 +134,11 @@ add_custom_target(rebuild
     VERBATIM
 )
 
-add_custom_target(postbuild
-    WORKING_DIRECTORY ${UBI_BUILD_DIR}
-    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
-            ${CMAKE_COMMAND} --build . --target postbuild --config $<CONFIG>
-    COMMENT "---- Prebuild (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
-    VERBATIM
-)
-
-##
 add_custom_target(reset
     WORKING_DIRECTORY ${UBI_BUILD_DIR}
     COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
             ${CMAKE_COMMAND} --build . --target reset --config $<CONFIG>
-    COMMENT "---- Load (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    COMMENT "---- Reset (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
     VERBATIM
 )
 
@@ -141,6 +147,14 @@ add_custom_target(load
     COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
             ${CMAKE_COMMAND} --build . --target load --config $<CONFIG>
     COMMENT "---- Load (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
+add_custom_target(unload
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target unload --config $<CONFIG>
+    COMMENT "---- Unload (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
     VERBATIM
 )
 
@@ -207,3 +221,20 @@ add_custom_target(xdserver
     COMMENT "---- Debug Server with new window (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
     VERBATIM
 )
+
+add_custom_target(flash
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target flash --config $<CONFIG>
+    COMMENT "---- Flash to target (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+
+add_custom_target(monitor
+    WORKING_DIRECTORY ${UBI_BUILD_DIR}
+    COMMAND ${CMAKE_COMMAND} -E env --unset=MAKEFLAGS
+            ${CMAKE_COMMAND} --build . --target monitor --config $<CONFIG>
+    COMMENT "---- Monitor target (UBI_CONFIG_NAME: ${UBI_CONFIG_NAME}, UBI_BUILD_DIR: ${UBI_BUILD_DIR})"
+    VERBATIM
+)
+

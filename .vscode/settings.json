@@ -1,4 +1,6 @@
 {
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "terminal.integrated.suggest.enabled": false,
     "cmake.generator": "Unix Makefiles",
     "explorer.autoReveal": true,
     "editor.renderWhitespace": "all",
